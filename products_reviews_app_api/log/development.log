@@ -144,3 +144,107 @@ Processing by ReviewsController#index as HTML
 Completed 200 OK in 36ms (Views: 12.2ms | ActiveRecord: 13.8ms | Allocations: 6668)
 
 
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:38:45 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#create as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7"}}
+Completed 422 Unprocessable Entity in 63ms (Views: 12.0ms | ActiveRecord: 7.6ms | Allocations: 11292)
+
+
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:39:40 -0500
+Processing by ReviewsController#create as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7"}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 10.7ms | Allocations: 4844)
+
+
+  
+NameError (undefined local variable or method `review' for #<ReviewsController:0x00000000007058>
+Did you mean?  @review):
+  
+app/controllers/reviews_controller.rb:14:in `create'
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:40:21 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:40:40 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:41:32 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:43:37 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:45:22 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:47:02 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 23:47:39 -0500
+  
+SyntaxError (/Users/chaco/Desktop/seir-1207/W11D03Homework/products_reviews_app_api/app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...  render json: review, status :created
+...                              ^
+):
+  
+app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/reviews_controller.rb:17: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 23:47:53 -0500
+Processing by ReviewsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:7:in `index'
+Completed 200 OK in 28ms (Views: 10.2ms | ActiveRecord: 7.8ms | Allocations: 6715)
+
+
+Started POST "/products/1/reviews" for ::1 at 2021-02-24 23:47:57 -0500
+Processing by ReviewsController#create as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey! Say! BEST", "author"=>"Hey Say! 7"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[36mReview Create (2.6ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "product_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Hey! Say! JUMP"], ["content", "Hey! Say! BEST"], ["author", "Hey Say! 7"], ["created_at", "2021-02-25 04:47:57.495232"], ["updated_at", "2021-02-25 04:47:57.495232"], ["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+Completed 201 Created in 65ms (Views: 0.5ms | ActiveRecord: 20.8ms | Allocations: 8792)
+
+

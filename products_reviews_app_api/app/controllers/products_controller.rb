@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   def show
+    @product = Product.find(params[:id])
     render json: @product, status: 200
   end
 
