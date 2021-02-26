@@ -19,6 +19,7 @@ function App() {
         setProducts(data);
       });
   };
+
   React.useEffect(() => getProducts(), []);
   return (
     <div className="App">

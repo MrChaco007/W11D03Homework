@@ -1,18 +1,15 @@
 import React from "react";
+import Card from "./Card";
 
 const Display = (props) => {
-  console.log(props);
   const { products } = props;
-  console.log(products);
+  console.log("products", products);
+
   const loaded = () => {
     return (
       <div className="container" style={{ textAlign: "center" }}>
         {products.map((product) => {
-          return (
-            <article key={product.id}>
-              <h3>{product.name}</h3>
-            </article>
-          );
+          return <Card product={product} />;
         })}
       </div>
     );
